@@ -93928,15 +93928,38 @@ Webflow.define('forms', module.exports = function ($, _) {
     var $fileNameEl = $fileEl.find('.w-file-upload-file-name');
     var sizeErrMsg = $errorMsgEl.attr('data-w-size-error');
     var typeErrMsg = $errorMsgEl.attr('data-w-type-error');
-    var genericErrMsg = $errorMsgEl.attr('data-w-generic-error');
+    var genericErrMsg = $errorMsgEl.attr('data-w-generic-error'); // Accessiblity fixes
+    // The file upload Input is not stylable by the designer, so we are
+    // going to pretend the Label is the input. ¯\_(ツ)_/¯
+
+    $label.on('click keydown', function (e) {
+      if (e.type === 'keydown' && e.which !== 13 && e.which !== 32) {
+        return;
+      }
+
+      e.preventDefault();
+      $input.click();
+    }); // Both of these are added through CSS
+
+    $label.find('.w-icon-file-upload-icon').attr('aria-hidden', 'true');
+    $removeEl.find('.w-icon-file-upload-remove').attr('aria-hidden', 'true');
 
     if (!inApp) {
-      $removeEl.on('click', function () {
+      $removeEl.on('click keydown', function (e) {
+        if (e.type === 'keydown') {
+          if (e.which !== 13 && e.which !== 32) {
+            return;
+          }
+
+          e.preventDefault();
+        }
+
         $input.removeAttr('data-value');
         $input.val('');
         $fileNameEl.html('');
         $defaultWrap.toggle(true);
         $successWrap.toggle(false);
+        $label.focus();
       });
       $input.on('change', function (e) {
         file = e.target && e.target.files && e.target.files[0];
@@ -93948,7 +93971,8 @@ Webflow.define('forms', module.exports = function ($, _) {
 
         $defaultWrap.toggle(false);
         $errorWrap.toggle(false);
-        $uploadingWrap.toggle(true); // Set filename
+        $uploadingWrap.toggle(true);
+        $uploadingWrap.focus(); // Set filename
 
         $fileNameEl.text(file.name); // Disable submit button
 
@@ -93992,6 +94016,7 @@ Webflow.define('forms', module.exports = function ($, _) {
       $uploadingWrap.toggle(false);
       $defaultWrap.toggle(true);
       $errorWrap.toggle(true);
+      $errorWrap.focus();
       form.fileUploads[i].uploading = false;
 
       if (!isUploading()) {
@@ -94020,6 +94045,7 @@ Webflow.define('forms', module.exports = function ($, _) {
 
       $uploadingWrap.toggle(false);
       $successWrap.css('display', 'inline-block');
+      $successWrap.focus();
       form.fileUploads[i].uploading = false;
 
       if (!isUploading()) {

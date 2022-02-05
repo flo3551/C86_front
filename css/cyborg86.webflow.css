@@ -9390,6 +9390,10 @@ figcaption {
   text-align: center;
 }
 
+.heading-31.sw {
+  text-align: center;
+}
+
 .js-clock-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9648,10 +9652,10 @@ figcaption {
   padding: 10px 42px;
   border-style: solid;
   border-width: 1px;
-  border-color: #8400ff;
+  border-color: #3183ff;
   border-radius: 5px;
   background-color: transparent;
-  box-shadow: 0 0 6px 0 #8400ff, inset 0 0 7px 0 #8400ff;
+  box-shadow: 0 0 6px 0 #3183ff, inset 0 0 7px 0 #3183ff;
   opacity: 0.7;
   -webkit-transition: opacity 500ms ease, box-shadow 500ms ease, -webkit-transform 500ms ease;
   transition: opacity 500ms ease, box-shadow 500ms ease, -webkit-transform 500ms ease;
@@ -10104,6 +10108,10 @@ figcaption {
   background-image: none;
 }
 
+.text-center-3.spacing.less {
+  margin-top: 0px;
+}
+
 .button-5 {
   margin-bottom: 40px;
   padding: 10px 42px;
@@ -10426,6 +10434,26 @@ figcaption {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+
+.section-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 1280px) {
@@ -13820,6 +13848,10 @@ figcaption {
     text-align: center;
   }
 
+  .heading-31.sw {
+    font-size: 35px;
+  }
+
   .js-clock-2 {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -14012,6 +14044,24 @@ figcaption {
     background-color: transparent;
   }
 
+  .countdown-detail {
+    margin-left: 34px;
+    font-size: 16px;
+  }
+
+  .countdown-row-2 {
+    margin-left: 20px;
+  }
+
+  .countdown-block-2 {
+    margin-left: -39px;
+  }
+
+  .countdown-time-2 {
+    margin-left: 31px;
+    font-size: 39px;
+  }
+
   .section-banner {
     display: none;
   }
@@ -14149,6 +14199,46 @@ figcaption {
   .image-130 {
     width: 135px;
     margin-bottom: 20px;
+  }
+
+  .section-25 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .section-26 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
