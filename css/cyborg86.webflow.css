@@ -9385,6 +9385,10 @@ figcaption {
   border: 2px none #000;
 }
 
+.div-block.hide {
+  display: none;
+}
+
 .heading-31 {
   margin-top: 1px;
   margin-bottom: 0px;
@@ -9567,9 +9571,18 @@ figcaption {
 
 .txt-eth {
   padding-left: 10px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   font-family: 'Neuropolitical rg', sans-serif;
   color: #fff;
   font-size: 20px;
+  text-align: center;
+}
+
+.txt-eth.txtcongrat {
+  color: #636964;
 }
 
 .content-319 {
@@ -9618,6 +9631,10 @@ figcaption {
 }
 
 .h1.mint.ntd {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   font-family: 'Neuropolitical rg', sans-serif;
   font-size: 35px;
   text-align: left;
@@ -9646,14 +9663,17 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .button-3 {
@@ -9690,6 +9710,17 @@ figcaption {
 
 .button-3.headerbtn {
   margin-bottom: 0px;
+}
+
+.button-3.boutonmint {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.button-3.boutonmint:hover {
+  box-shadow: 0 0 10px 0 rgba(212, 246, 249, 0.24), inset 0 0 17px 0 #3183ff;
 }
 
 .block-2 {
@@ -9734,6 +9765,10 @@ figcaption {
   padding-top: 200px;
   padding-bottom: 0px;
   background-color: transparent;
+}
+
+.section-15.mint.onlymobile {
+  display: none;
 }
 
 .eth-logo {
@@ -9981,9 +10016,8 @@ figcaption {
 }
 
 .countdown-row-2 {
+  display: none;
   grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
@@ -10756,6 +10790,103 @@ figcaption {
   font-family: Exo, sans-serif;
 }
 
+.bold-text-79 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.bold-text-79.txtcongrat {
+  font-family: 'Neuropolitical rg', sans-serif;
+  color: #00ff40;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  margin-left: -10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.test {
+  color: #fff;
+  font-size: 23px;
+}
+
+.success-message-2 {
+  background-color: transparent;
+}
+
+.input-group-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #333;
+}
+
+.input-group-button:hover {
+  background-color: #858585;
+  color: #d8d6d6;
+}
+
+.tes {
+  color: #000;
+}
+
+.text-block-31 {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.text-field-2 {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 0px;
+  border-radius: 1000px;
+  background-color: #fff;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+}
+
+.text-field-2.s {
+  color: #000;
+}
+
 @media screen and (min-width: 1280px) {
   .section {
     background-color: transparent;
@@ -10817,6 +10948,11 @@ figcaption {
 
   .steps-clone {
     width: 100%;
+  }
+
+  .div-eth {
+    border-radius: 1px;
+    background-color: #000;
   }
 
   .hero-text-2 {
@@ -14294,7 +14430,9 @@ figcaption {
   }
 
   .h1.mint.ntd {
+    font-size: 34px;
     text-align: center;
+    letter-spacing: 6px;
   }
 
   .div-eth {
@@ -14314,6 +14452,14 @@ figcaption {
 
   .section-15.mint {
     padding-top: 130px;
+  }
+
+  .section-15.mint.onlypc {
+    display: block;
+  }
+
+  .section-15.mint.onlymobile {
+    display: block;
   }
 
   .text-gradient-9 {
@@ -14776,6 +14922,10 @@ figcaption {
 
   .button-6.pop.pcv {
     display: block;
+  }
+
+  .input-group {
+    margin-left: 0px;
   }
 }
 
