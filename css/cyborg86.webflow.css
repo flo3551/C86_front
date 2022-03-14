@@ -9701,7 +9701,7 @@ figcaption {
 }
 
 .button-3:hover {
-  box-shadow: 0 0 10px 0 rgba(212, 246, 249, 0.24), inset 0 0 17px 0 #8400ff;
+  box-shadow: 0 0 10px 0 rgba(212, 246, 249, 0.24), inset 0 0 17px 0 #3183ff;
   opacity: 0.88;
   -webkit-transform: scale(1.08);
   -ms-transform: scale(1.08);
